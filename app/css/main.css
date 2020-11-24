@@ -1,0 +1,50 @@
+body {
+  background-color: #cccccc; }
+
+.top-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/head2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.main-nav {
+  font-family: 'PT Serif', serif;
+  font-size: 27px; }
+
+.main-nav ul {
+  display: table; }
+
+.main-nav ul li {
+  list-style-type: none;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center; }
+
+.main-nav ul li a {
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  color: white; }
+
+.main-nav ul li:last-child {
+  padding: 0px; }
+
+.main-nav a:hover {
+  color: #FF9900;
+  text-decoration: none; }
+
+.lang-switch {
+  position: absolute; }
+
+.langs {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0px; }
+
+.langs a {
+  color: white; }
+
+.langs a:hover {
+  color: #FF9900;
+  text-decoration: none; }

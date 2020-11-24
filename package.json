@@ -1,0 +1,23 @@
+{
+  "name": "centrolit",
+  "version": "1.0.0",
+  "description": "new version of glz-centrolit.by",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "website",
+    "gulp"
+  ],
+  "author": "Ramanishka Kanstantsin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
