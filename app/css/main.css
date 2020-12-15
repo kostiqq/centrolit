@@ -1,9 +1,9 @@
 body {
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  overflow-x: hidden; }
 
 header {
   height: 100vh;
-  max-width: 100vw;
   width: 100%;
   background-image: url("../img/head2.jpg");
   background-repeat: no-repeat;
@@ -99,13 +99,29 @@ nav a {
 .contacts-head {
   max-width: 380px;
   width: 100%;
-  border: 2px solid #ff9900; }
+  border: 2px solid #ff9900;
+  height: 100%; }
 
 .contacts-head dl {
   color: white;
   text-align: left; }
-  .contacts-head dl > dt dd {
-    padding-top: 16px; }
+
+.dd {
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF; }
+
+.dt:nth-child(odd) {
+  padding-top: 20px;
+  padding-bottom: 24px; }
+
+.dt:nth-child(even) {
+  padding-top: 20px;
+  padding-bottom: 24px; }
 
 .contacts-head a {
   color: #ff9900; }
@@ -114,20 +130,76 @@ nav a {
   text-decoration: none;
   color: #ffffff; }
 
-.container {
+.header_container {
   max-width: 1118px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid red;
-  padding-top: 118px;
-  padding-left: 113px; }
+  margin-left: 134px; }
 
-.main-text {
-  max-width: 400px;
+.container {
+  max-width: 583px;
+  width: 100%; }
+
+.header__image {
+  display: flex;
+  justify-content: center; }
+
+.container > h1 {
+  color: #FD2B2B;
+  font-family: 'PT Serif', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 79px;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
+  text-align: center; }
+
+.container > p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 52px;
+  color: #FFFFFF; }
+
+.line {
+  border-top: 3px solid #FF9900;
+  max-width: 531px;
   width: 100%;
-  border: 1px solid white; }
+  margin: 0 auto;
+  margin-top: 18px; }
+
+.container > .line + p {
+  max-width: 557px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  padding-top: 50px; }
+
+.social_networks {
+  max-width: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.social_networks > a > img {
+  width: 50px;
+  height: 50px; }
+
+.link {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px; }
 
 .logo-top {
   position: relative;
@@ -136,4 +208,6 @@ nav a {
   width: 6em; }
 
 .test {
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 26px;
+  padding-left: 28px; }

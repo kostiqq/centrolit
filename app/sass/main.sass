@@ -1,47 +1,57 @@
-body
-    background-color: rgb(204, 204, 204)
+body 
+  background-color: #cccccc
+  overflow-x: hidden
 
-header
-    height: 100vh
-    max-width: 100vw
-    width: 100%
-    background-image: url('../img/head2.jpg')
-    background-repeat: no-repeat
-    background-size: cover
 
-.langs
-  margin-bottom: 0px 
+header 
+  height: 100vh
+  width: 100%
+  background-image: url("../img/head2.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+
+
+.langs 
+  margin-bottom: 0px
   font-size: 25px
   color: white
+
 
 .langs a 
   color: white
 
+
 .langs a:hover 
   color: #ff9900
   text-decoration: none
+
 
 nav ul 
   list-style: none
   margin: 0
   padding: 0
 
+
 nav a 
-    text-decoration: none
-    outline: none
-    display: block
-    transition: .4s ease-in-out
+  text-decoration: none
+  outline: none
+  display: block
+  transition: .4s ease-in-out
+
 
 .topmenu 
-    text-align: center
+  text-align: center
+
 
 .topmenu > li 
   display: inline-block
   position: relative
-  font-family: 'PT Serif', serif
+  font-family: 'PT Serif', serif 
 
-.topmenu  li:last-child
-  padding: 0px  
+
+.topmenu li:last-child 
+  padding: 0px
+
 
 .topmenu > li:after 
   content: ""
@@ -52,9 +62,11 @@ nav a
   top: 16px
   transform: rotate(30deg)
 
+
 .topmenu > li:last-child:after 
   background: none
   box-shadow: none
+
 
 .topmenu > li > a 
   padding: 12px 26px
@@ -62,10 +74,12 @@ nav a
   font-size: 27px
   letter-spacing: 1px
 
-.topmenu li a:hover  
-    color: #ff9900
-    text-decoration: none
-    
+
+.topmenu li a:hover 
+  color: #ff9900
+  text-decoration: none
+
+
 .submenu 
   position: absolute
   left: 50%
@@ -77,8 +91,9 @@ nav a
   z-index: 5
   visibility: hidden
   opacity: 0
-  transform: scale(.8)
+  transform: scale(0.8)
   transition: .4s ease-in-out
+
 
 .submenu li a 
   padding: 10px 0
@@ -88,7 +103,7 @@ nav a
   color: #ffffff
   font-family: 'PT Serif', serif
 
-.submenu li a:hover
+.submenu li a:hover 
   color: #000000
 
 .topmenu > li:hover .submenu 
@@ -96,41 +111,123 @@ nav a
   opacity: 1
   transform: scale(1)
 
-.contacts-head
+.contacts-head 
   max-width: 380px
   width: 100%
   border: 2px solid #ff9900
+  height: 100%
 
-.contacts-head dl
+
+.contacts-head dl 
   color: white
   text-align: left
 
-  > dt 
-    dd
-      padding-top: 16px
 
-.contacts-head a
+.dd 
+  line-height: 30px
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 19px
+  color: #FFFFFF
+
+
+.dt:nth-child(odd) 
+  padding-top: 20px
+  padding-bottom: 24px
+
+
+.dt:nth-child(even) 
+  padding-top: 20px
+  padding-bottom: 24px
+
+
+.contacts-head a 
   color: #ff9900
 
-.contacts-head a:hover
+
+.contacts-head a:hover 
   text-decoration: none
   color: #ffffff
 
-.container
+
+.header_container 
   max-width: 1118px
   width: 100%
   display: flex
-  flex-wrap: wrap
   justify-content: space-between
-  border: 1px solid red
-  padding-top: 118px
-  padding-left: 113px
+  margin-left: 134px
 
-.main-text
-  max-width: 400px
+
+.container 
+  max-width: 583px
   width: 100%
-  border: 1px solid white
-.logo-top
+
+
+.header__image 
+  display: flex
+  justify-content: center
+
+
+.container > h1 
+  color: #FD2B2B
+  font-family: 'PT Serif', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 60px
+  line-height: 79px
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0
+  text-align: center
+
+
+.container > p 
+  font-family: 'Roboto', sans-serif
+  margin-top: 18px
+  font-style: normal
+  font-weight: 300
+  font-size: 44px
+  line-height: 52px
+  color: #FFFFFF
+
+.line 
+  border-top: 3px solid #FF9900
+  max-width: 531px
+  width: 100%
+  margin: 0 auto
+  margin-top: 18px
+
+.container > .line + p 
+  max-width: 557px
+  width: 100%
+  margin: 0 auto
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 30px
+  line-height: 35px
+  color: #FFFFFF
+  padding-top: 50px
+
+.social_networks
+  max-width: 130px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+  margin-top: 30px
+
+.social_networks > a >img 
+  width: 50px
+  height: 50px
+
+.link 
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  padding-top: 30px
+
+.logo-top 
   position: relative
   margin-left: auto
   margin-right: auto
@@ -138,3 +235,5 @@ nav a
 
 .test 
   font-size: 16px
+  padding-top: 26px
+  padding-left: 28px
