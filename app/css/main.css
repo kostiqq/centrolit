@@ -1,5 +1,7 @@
 body {
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  height: auto !important;
+  position: relative; }
 
 header {
   height: 100vh;
